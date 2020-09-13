@@ -19,17 +19,21 @@
 -->
 
 </head>
+    
+    <body>
 
-<body bgcolor="green">
     <div class="tm-page-wrap mx-auto">
         <div class="position-relative">
             <div class="position-absolute tm-site-header">
                 <div class="container-fluid position-relative">
+
+                 
                     <div class="row">
+
                         <div class="col-5 col-md-8 ml-auto mr-0">
                             <div class="tm-site-nav">
                                 <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
-                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                    <button class="btn btn-primary navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
                                         data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
                                         aria-expanded="false" aria-label="Toggle navigation">
                                         <span>
@@ -40,14 +44,17 @@
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="https://www.hackingarticles.in/">Security Blog</a>
-                                            </li>
-                                            <li class="nav-item">
                                                 <a class="nav-link tm-nav-link" href="os/os.html">Operating System</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link tm-nav-link" href="computersoftware.html">Application</a>
                                             </li>
+                                        
+                                             <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="#">About</a>
+                                            </li>
+                                            
+                                           
                                             
                                             
                                         </ul>
@@ -58,23 +65,15 @@
                     </div>
                 </div>
             </div>
-            <div class="tm-welcome-container text-center text-white">
-                <div class="tm-welcome-container-inner">
-                    <p class="tm-welcome-text mb-1 text-white">
-            
-                    <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
-                        <span>Discover</span>
-                    </a>
-                </div>
-            </div>
+      
 
             <div id="tm-video-container">
              <video autoplay muted loop id="tm-video">
-                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-                </video>                     
+                   
+              </video>                     
             </div>
             
-            <i id="tm-video-control-button" class="fas fa-pause"></i>
+           
         </div>
 
         <div class="container-fluid">
@@ -120,7 +119,7 @@
                                 </a>
                             </div>
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">How To Convert HTTP websites into HTTPS || How To Setup CloudFlare to Your Website || DDOS Attack ?</h3>
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">How To Convert HTTP websites into HTTPS || How To Setup CloudFlare to Your Website </h3>
                                 <p class="tm-catalog-item-text"> In this video. I will teach you. How To Convert HTTP websites into HTTPS || How To Setup CloudFlare to Your Website || DDOS Attack ?</p>
                             </div>
                         </div>
@@ -151,7 +150,7 @@
                                 </a>
                             </div>                            
                             <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">How to Hack Website using sql injection ||Website Hacking||Website ko Hack Kaise Kare ? [Hindi?]</h3>
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">How to Hack Website using sql injection</h3>
                                 <p class="tm-catalog-item-text">In this video. I will teach you.How to Hack Website using sql injection ||Website Hacking||Website ko Hack Kaise Kare ? [Hindi?]</p>
                             </div>
                         </div>
@@ -213,6 +212,7 @@
                                 <li><a href="https://youtube.com/channel/UCbwI1ylVOUjb3JLab0WXlzA" target="blank">Youtube</a></li>
                                 <li><a href="https://www.instagram.com/pentestblog/" target="blank">Instagram</a></li>
                                 <li><a href="https://t.me/pentestblog" target="blank">Telegram</a></li>
+                                <li><a href="https://www.twitter.com/pentestblog1" target="blank">Twitter</a></li>
                             </ul>    
                         </div>                        
                     </div>
@@ -221,10 +221,9 @@
                             <h3 class="tm-text-primary mb-4">Our Pages</h3>
                             <ul class="list-unstyled tm-footer-links">
                                 <li><a href="https://www.youtube.com/channel/UCbwI1ylVOUjb3JLab0WXlzA">Our Youtube Videos</a></li>
-                                <li><a href="#">License Terms</a></li>
+                              
                                 <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Privacy Policies</a></li>
+                          
                             </ul>
                         </div>                        
                     </div>
@@ -232,9 +231,12 @@
 
                 <footer class="row pt-6">
                     <div class="col-12">
-                        <p class="text-right">Copyright 2020 © www.pentestblog.in
+                   <center>
+                        <p class="text-center" style="color:blue;" >Copyright 2020 © www.pentestblog.in</b></p>
                         
-                        - Designed by <a href="https://www.pentestblog.in" rel="nofollow" target="_parent">Sandeep Yadav</a></p>
+                        <p style="color:green;">Designed by Sandeep Yadav</p>
+
+                      </center>
                     </div>
                 </footer>
             </div> <!-- tm-content-container -->
@@ -251,11 +253,11 @@
             let windowWidth = window.innerWidth;
             let newVidWidth = windowWidth;
             let newVidHeight = windowWidth * vidHeight / vidWidth;
-            let marginLeft = 0;
+            let marginLeft = 10;
             let marginTop = 0;
 
-            if (newVidHeight < 500) {
-                newVidHeight = 500;
+            if (newVidHeight < 100) {
+                newVidHeight = 100;
                 newVidWidth = newVidHeight * vidWidth / vidHeight;
             }
 
@@ -263,7 +265,7 @@
                 marginLeft = -((newVidWidth - windowWidth) / 2);
             }
 
-            if(newVidHeight > 720) {
+            if(newVidHeight > 100) {
                 marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
             }
 
